@@ -32,6 +32,11 @@ h2 {
     text-transform: uppercase;
 }
 
+h3 {
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
 nav a {
     padding: 0.5em;
     border: 1px dotted #ddd;
