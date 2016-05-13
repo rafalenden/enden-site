@@ -1,0 +1,38 @@
+body {
+    color: #222;
+    background: #f6f6f6;
+    text-align: center;
+    padding: 2em;
+    font: 0.9em/1.4 'Trebuchet MS';
+}
+
+header {
+    margin-bottom: 5em;
+}
+
+h1 {
+    font-size: 4em;
+    line-height: 0.9;
+    letter-spacing: -0.05em;
+    margin: 0.5em 0 0;
+}
+
+h2 {
+    font-size: 1em;
+    padding: 0.5em 0 0 0.15em;
+    line-height: 1.5;
+    color: #999;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+nav a {
+    padding: 0.5em;
+    border: 1px dotted #ddd;
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+nav a:focus {
+    background: #e6e6e6;
+}
