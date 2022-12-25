@@ -1,7 +1,7 @@
 body {
   color: #000000;
   text-align: center;
-  padding: 2em;
+  padding: 40px 10px;
   font-size: 18px;
   line-height: 1;
   font-family: Serif, serif, sans-serif;
@@ -18,7 +18,7 @@ header {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 40px;
+  padding: 40px 10px 40px 40px;
 }
 
 .header--right {
@@ -27,7 +27,7 @@ header {
   flex: 1;
   text-align: right;
   margin: auto;
-  padding: 40px;
+  padding: 40px 40px 40px 10px;
 }
 
 h1 {
