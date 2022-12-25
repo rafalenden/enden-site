@@ -1,49 +1,75 @@
 body {
-    color: #222;
-    background: #f6f6f6;
-    text-align: center;
-    padding: 2em;
-    font: 1em/1.4 'Trebuchet MS';
+  color: #000000;
+  text-align: center;
+  padding: 2em;
+  font-size: 18px;
+  line-height: 1;
+  font-family: Serif, serif, sans-serif;
 }
 
 header {
-    margin-bottom: 5em;
+  border: 6px solid #0000ff;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+}
+
+.header--left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 40px;
+}
+
+.header--right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: right;
+  margin: auto;
+  padding: 40px;
 }
 
 h1 {
-    font-size: 4em;
-    line-height: 0.9;
-    letter-spacing: -0.05em;
-    margin: 0.5em 0 0.5em;
-}
-
-h1 span {
-    display: block;
-    font-size: 0.6em;
-    color: #444;
-    font-weight: normal;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: normal;
+  text-align: left;
+  margin: 0 0 10px 0;
 }
 
 h2 {
-    font-size: 1em;
-    line-height: 1.5;
-    color: #999;
-    letter-spacing: 10px;
-    text-transform: uppercase;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: normal;
+  text-align: left;
+  font-style: italic;
+  margin: 0;
 }
 
 h3 {
-    font-weight: normal;
-    font-size: 1.2em;
+  font-weight: normal;
+  font-size: 1.2em;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 nav a {
-    padding: 0.5em;
-    border: 1px dotted #ddd;
-    margin-bottom: 1em;
-    display: inline-block;
+  color: #000000;
+  padding: 5px 15px;
+  line-height: 1;
+}
+
+nav a:hover, nav a:focus {
+  color: #0000ff;
+  text-decoration-color: #0000ff;
 }
 
 nav a:focus {
-    background: #e6e6e6;
+  background-image: linear-gradient(-45deg, #f3f3f3 25%, transparent 25%, transparent 50%, #f3f3f3 50%, #f3f3f3 75%, transparent 75%, #fff);
+  background-size: 30px 30px;
 }
