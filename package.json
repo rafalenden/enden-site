@@ -1,0 +1,11 @@
+{
+  "name": "enden.com",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "scripts": {
+    "start": "browser-sync start --server --files '*.html, *.css, *.js' --port 8000 --no-open --no-notify"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.3"
+  }
+}
