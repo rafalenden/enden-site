@@ -38,7 +38,7 @@
             align-items: center;
             text-decoration: none;
             background-color: #fff;
-            transition: all 0.3s ease;
+            transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
             cursor: pointer;
         }
 
@@ -53,7 +53,7 @@
             color: #000;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            transition: all 0.3s ease;
+            transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
             position: relative;
         }
 
@@ -66,7 +66,7 @@
             width: 0;
             height: 3px;
             background-color: currentColor;
-            transition: width 0.3s ease;
+            transition: width 0.7s cubic-bezier(0.19, 1, 0.22, 1);
         }
 
         .section:hover h2::after,
@@ -97,7 +97,7 @@
             }
 
             .section {
-                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
             }
 
             .section:first-child {
@@ -106,13 +106,13 @@
             }
 
             .section {
-                transition: flex 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                transition: flex 0.8s cubic-bezier(0.19, 1, 0.22, 1), background-color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
             }
             .section:hover {
-                flex: 1.2;
+                flex: 1.12;
             }
             .section:not(:hover) {
-                flex: 0.8;
+                flex: 0.88;
             }
         }
     </style>
