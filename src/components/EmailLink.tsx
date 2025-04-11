@@ -1,6 +1,6 @@
-'use client';
+'use client'
 
-import { useState, useEffect, ReactNode } from 'react';
+import { ReactNode } from 'react';
 
 interface EmailLinkProps {
   user: string;
@@ -8,17 +8,15 @@ interface EmailLinkProps {
 }
 
 export default function EmailLink({ user, children }: EmailLinkProps) {
-  const [email, setEmail] = useState<string>('');
-
-  useEffect(() => {
-    setEmail(`${user}@enden.com`);
-  }, [user]);
-
   return (
     <a 
-      href={`mailto:${email}`}
+      href="#"
       target="_blank"
       rel="noopener noreferrer"
+      onClick={(e) => {
+        e.preventDefault();
+        document.location.href = `mailto:${user}@enden.com`;
+      }}
     >
       {children}
     </a>

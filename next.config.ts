@@ -5,8 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  // Optional: Add trailing slash for better compatibility with static hosting
-  trailingSlash: true,
+  trailingSlash: false,
 };
 
 export default nextConfig;

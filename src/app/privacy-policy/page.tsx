@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
         <h1>Privacy Policy</h1>
 
         <h2>1. Introduction</h2>
-        <p>EndCode Ltd ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.</p>
+        <p>EndCode Ltd (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.</p>
 
         <h2>2. Information We Collect</h2>
         <p>We do not collect any personal information through our website. Our website is purely informational and does not use cookies or tracking technologies.</p>
