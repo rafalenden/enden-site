@@ -28,7 +28,7 @@ body {
 }
 
 .links a {
-  margin: var(--spacing-lg) var(--spacing-sm) var(--spacing-lg) var(--spacing-sm);
+  margin: var(--spacing-sm);
 }
 
 a {
