@@ -9,11 +9,12 @@ export default function Home() {
         <h2>Rafal Enden</h2>
         <p>3rd Floor, 86-90 Paul Street, London, England, EC2A 4NE</p>
         <p>VAT Number: GB248764465</p>
-        <div className="links">
-          <EmailLink user="site-contact">Contact</EmailLink>
+        <p className="links">
+          <Link href="/projects">Projects</Link>
           <Link href="https://link.enden.com/github?from=site">GitHub</Link>
           <Link href="https://link.enden.com/linkedin?from=site">LinkedIn</Link>
-        </div>
+          <EmailLink user="site-contact">Contact</EmailLink>
+        </p>
       </header>
       <footer className="footer">
         <div className="footer-links">

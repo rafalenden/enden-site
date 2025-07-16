@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 export default function PrivacyPolicy() {
   return (
-    <main className="legal-page">
-      <div className="legal-content">
+    <main className="narrow-page">
+      <div className="narrow-content">
         <Link href="/" className="back-link">← Back to Home</Link>
 
         <h1>Privacy Policy</h1>

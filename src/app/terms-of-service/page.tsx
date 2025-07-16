@@ -3,8 +3,8 @@ import EmailLink from '@/components/EmailLink';
 
 export default function TermsOfService() {
   return (
-    <main className="legal-page">
-      <div className="legal-content">
+    <main className="narrow-page">
+      <div className="narrow-content">
         <Link href="/" className="back-link">← Back to Home</Link>
     
         <h1>Terms of Service</h1>
