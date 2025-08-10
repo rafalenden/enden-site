@@ -10,11 +10,10 @@ export default function Projects() {
         <h1>Amp for Bandcamp</h1>
 
         <div className="links">
-          <Link href="https://apps.apple.com/pl/app/amp-for-bandcamp/id6745343456">Apple AppStore</Link>
-          <Link href="https://chromewebstore.google.com/detail/amp-for-bandcamp/gjmlgkbcolbleloakpcfhfaodldlheld">Chrome
-            Web Store</Link>
-          <Link href="https://addons.mozilla.org/en-US/firefox/addon/amp-for-bandcamp/">Add-ons for Firefox</Link>
-          <Link href="https://github.com/rafenden/amp-for-bandcamp">GitHub</Link>
+          <Link href="https://apps.apple.com/pl/app/amp-for-bandcamp/id6745343456">Add to Safari</Link>
+          <Link href="https://chromewebstore.google.com/detail/amp-for-bandcamp/gjmlgkbcolbleloakpcfhfaodldlheld">Add to Chrome</Link>
+          <Link href="https://addons.mozilla.org/en-US/firefox/addon/amp-for-bandcamp/">Add to Firefox</Link>
+          <Link href="https://github.com/rafenden/amp-for-bandcamp">Source Code</Link>
           <Link href="/projects/amp-for-bandcamp/privacy-policy">Privacy Policy</Link>
         </div>
 
