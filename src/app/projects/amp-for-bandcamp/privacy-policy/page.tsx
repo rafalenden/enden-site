@@ -4,8 +4,6 @@ export default function AmpForBandcampPrivacyPolicy() {
   return (
     <main className="narrow-page">
       <div className="narrow-content">
-        <Link href="/projects/amp-for-bandcamp" className="back-link">← Back to Amp for Bandcamp</Link>
-
         <h1>Privacy Policy - Amp for Bandcamp</h1>
         
         <p><strong>Last Updated:</strong> July 15, 2025</p>
@@ -40,6 +38,8 @@ export default function AmpForBandcampPrivacyPolicy() {
 
         <h2>Disclaimer</h2>
         <p>Amp for Bandcamp is not affiliated with Bandcamp. It is an independent browser extension created to enhance the user experience on the Bandcamp platform.</p>
+
+        <Link href="/projects/amp-for-bandcamp" className="back-link">← Back to Amp for Bandcamp</Link>
       </div>
     </main>
   );

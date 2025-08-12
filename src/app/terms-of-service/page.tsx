@@ -5,8 +5,6 @@ export default function TermsOfService() {
   return (
     <main className="narrow-page">
       <div className="narrow-content">
-        <Link href="/" className="back-link">← Back to Home</Link>
-    
         <h1>Terms of Service</h1>
 
         <h2>1. Acceptance of Terms</h2>
@@ -36,6 +34,8 @@ export default function TermsOfService() {
 
         <h2>9. Contact Information</h2>
         <p>If you have any questions about these Terms of Service, please contact us via <EmailLink user="site-terms">email</EmailLink>.</p>
+
+        <Link href="/" className="back-link">← Back to Home</Link>
       </div>
     </main>
   );

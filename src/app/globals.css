@@ -28,6 +28,9 @@ body {
   font-family: var(--font-family);
   line-height: var(--line-height);
   color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -98,7 +101,8 @@ a:hover::after {
 
 .back-link {
   display: inline-block;
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
   font-size: 0.9rem;
 }
 
@@ -130,9 +134,7 @@ a:hover::after {
 
 /* Layout */
 .home-page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  flex: 1;
 }
 
 .header {
@@ -152,7 +154,13 @@ a:hover::after {
   text-align: center;
 }
 
+.footer-info {
+    font-size: 0.9rem;
+    color: var(--text-color-light);
+}
+
 .narrow-page {
+  flex: 1;
   padding: var(--spacing-lg);
   padding-bottom: var(--spacing-xl);
 }

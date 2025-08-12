@@ -5,8 +5,6 @@ export default function Projects() {
   return (
     <main className="narrow-page">
       <div className="narrow-content">
-        <Link href="/projects" className="back-link">← Back to Projects</Link>
-
         <h1>Amp for Bandcamp</h1>
 
         <div className="links">
@@ -47,6 +45,8 @@ export default function Projects() {
           streamlined, feature-rich experience.</p>
 
         <Image src="/projects/amp-for-bandcamp/screenshot-1.png" alt="Screenshot 1" width="800" height="500"/>
+
+        <Link href="/projects" className="back-link">← Back to Projects</Link>
       </div>
     </main>
   );

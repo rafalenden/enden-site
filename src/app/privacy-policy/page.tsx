@@ -5,8 +5,6 @@ export default function PrivacyPolicy() {
   return (
     <main className="narrow-page">
       <div className="narrow-content">
-        <Link href="/" className="back-link">← Back to Home</Link>
-
         <h1>Privacy Policy</h1>
 
         <h2>1. Introduction</h2>
@@ -26,6 +24,8 @@ export default function PrivacyPolicy() {
 
         <h2>6. Contact Us</h2>
         <p>If you have any questions about this Privacy Policy, please contact us via <EmailLink user="site-privacy">email</EmailLink>.</p>
+
+        <Link href="/" className="back-link">← Back to Home</Link>
       </div>
     </main>
   );
