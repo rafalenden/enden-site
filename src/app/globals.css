@@ -1,5 +1,6 @@
 :root {
   /* Colors */
+  --background-color: #fff;
   --primary-color: #1802ff;
   --text-color: #333;
   --text-color-light: #666;
@@ -29,7 +30,17 @@
   --spacing-xl: 3rem;
 }
 
-
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #121522;
+    --primary-color: #456bba;
+    --text-color: #abb2c1;
+    --text-color-light: #ccced5;
+    --text-color-dark: #ffffff;
+    --border-color: rgba(0, 0, 0, 0.1);
+    --kbd-border: #ddd;
+  }
+}
 
 body {
   margin: 0;
@@ -40,6 +51,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: var(--background-color);
 }
 
 img {
@@ -58,14 +70,6 @@ h1 {
 h2 {
   font-size: clamp(var(--font-size-lg), 4vw, var(--font-size-xl));
   font-weight: normal;
-  color: var(--text-color-light);
-}
-
-p {
-  color: var(--text-color-light);
-}
-
-li {
   color: var(--text-color-light);
 }
 
@@ -177,12 +181,6 @@ a:hover::after {
   padding: var(--spacing-xl) var(--spacing-sm);
 }
 
-.header p {
-  margin: 0 0 var(--spacing-xs);
-  color: var(--text-color-light);
-  font-size: var(--font-size-base);
-}
-
 .footer {
   margin-top: auto;
   padding: var(--spacing-md) var(--spacing-sm);
@@ -191,7 +189,6 @@ a:hover::after {
 
 .footer-info {
   font-size: var(--font-size-sm);
-  color: var(--text-color-light);
 }
 
 .narrow-page {
