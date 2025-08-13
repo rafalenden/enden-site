@@ -1,11 +1,19 @@
 import Link from 'next/link';
 import Image from "next/image";
+import type { Metadata } from "next";
+
+const pageTitle = 'Amp for Bandcamp';
+
+export const metadata: Metadata = {
+  title: `${pageTitle} — enden.com`,
+  description: `${pageTitle} — enden.com`,
+};
 
 export default function Projects() {
   return (
     <main className="narrow-page">
       <div className="narrow-content">
-        <h1>Amp for Bandcamp</h1>
+        <h1>{pageTitle}</h1>
 
         <div className="links">
           <Link href="https://apps.apple.com/pl/app/amp-for-bandcamp/id6745343456">Add to Safari</Link>
@@ -23,7 +31,7 @@ export default function Projects() {
         <p><strong>Auto-Play Next Track</strong> - Never miss a beat with automatic track progression when songs end</p>
 
         <p><strong>Keyboard Shortcuts</strong> - Control playback without clicking:</p>
-        <div><kbd>Space</kbd> Play/Pause</div>
+        <div><kbd>space</kbd> Play/Pause</div>
         <div><kbd>↑</kbd> Previous Track</div>
         <div><kbd>↓</kbd> Next Track</div>
         <div><kbd>→</kbd> Fast Forward</div>
@@ -50,4 +58,4 @@ export default function Projects() {
       </div>
     </main>
   );
-} 
+}

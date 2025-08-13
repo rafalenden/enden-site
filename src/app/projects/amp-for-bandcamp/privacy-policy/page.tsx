@@ -1,11 +1,19 @@
 import Link from 'next/link';
+import type { Metadata } from "next";
+
+const pageTitle = 'Privacy Policy - Amp for Bandcamp';
+
+export const metadata: Metadata = {
+  title: `${pageTitle} — enden.com`,
+  description: `${pageTitle} — enden.com`,
+};
 
 export default function AmpForBandcampPrivacyPolicy() {
   return (
     <main className="narrow-page">
       <div className="narrow-content">
-        <h1>Privacy Policy - Amp for Bandcamp</h1>
-        
+        <h1>{pageTitle}</h1>
+
         <p><strong>Last Updated:</strong> July 15, 2025</p>
 
         <h2>Information We Collect</h2>

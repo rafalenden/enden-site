@@ -9,7 +9,7 @@ interface EmailLinkProps {
 
 export default function EmailLink({ user, children }: EmailLinkProps) {
   return (
-    <a 
+    <a
       href="#"
       target="_blank"
       rel="noopener noreferrer"

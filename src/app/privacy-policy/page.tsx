@@ -1,11 +1,19 @@
 import EmailLink from '@/components/EmailLink';
-import Link from 'next/link';
+import type { Metadata } from 'next';
+
+const pageTitle = 'Privacy Policy';
+
+export const metadata: Metadata = {
+  title: `${pageTitle} — enden.com`,
+  description: `${pageTitle} — enden.com`,
+};
+
 
 export default function PrivacyPolicy() {
   return (
     <main className="narrow-page">
       <div className="narrow-content">
-        <h1>Privacy Policy</h1>
+        <h1>{pageTitle}</h1>
 
         <h2>1. Introduction</h2>
         <p>EndCode Ltd (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.</p>
@@ -24,9 +32,7 @@ export default function PrivacyPolicy() {
 
         <h2>6. Contact Us</h2>
         <p>If you have any questions about this Privacy Policy, please contact us via <EmailLink user="site-privacy">email</EmailLink>.</p>
-
-        <Link href="/" className="back-link">← Back to Home</Link>
       </div>
     </main>
   );
-} 
+}
