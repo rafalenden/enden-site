@@ -1,19 +1,16 @@
 import EmailLink from '@/components/EmailLink';
 import type { Metadata } from "next";
+import NarrowPage from "@/components/NarrowPage";
 
 const pageTitle = 'Terms of Service';
 
 export const metadata: Metadata = {
-  title: `${pageTitle} — enden.com`,
-  description: `${pageTitle} — enden.com`,
+  title: pageTitle,
 };
 
 export default function TermsOfService() {
   return (
-    <main className="narrow-page">
-      <div className="narrow-content">
-        <h1>{pageTitle}</h1>
-
+    <NarrowPage pageTitle={pageTitle}>
         <h2>1. Acceptance of Terms</h2>
         <p>By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement.</p>
 
@@ -41,7 +38,6 @@ export default function TermsOfService() {
 
         <h2>9. Contact Information</h2>
         <p>If you have any questions about these Terms of Service, please contact us via <EmailLink user="site-terms">email</EmailLink>.</p>
-      </div>
-    </main>
+    </NarrowPage>
   );
 }

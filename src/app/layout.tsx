@@ -1,12 +1,14 @@
-import type { Metadata } from 'next';
+import { Metadata } from "next";
 import Link from 'next/link';
-import SiteTitle from '@/components/SiteTitle';
 
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'enden.com —︎ Rafal Enden',
-  description: 'enden.com  —︎︎ Rafal Enden',
+  title: {
+    template: '%s – enden.com',
+    default: 'Rafal Enden – enden.com',
+  },
+  description: 'IT consulting and bespoke software development.',
   icons: {
     icon: '/favicon.png',
     shortcut: '/favicon.png',
@@ -24,8 +26,6 @@ export default function RootLayout({
         <link rel="shortcut icon" type="image/png" href="/favicon.png" />
       </head>
       <body>
-        <SiteTitle />
-
         {children}
 
         <footer className="footer">

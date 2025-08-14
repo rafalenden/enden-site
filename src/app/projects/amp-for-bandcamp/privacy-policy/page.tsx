@@ -1,19 +1,27 @@
-import Link from 'next/link';
 import type { Metadata } from "next";
+import NarrowPage from "@/components/NarrowPage";
+import {Breadcrumb} from "@/types";
 
-const pageTitle = 'Privacy Policy - Amp for Bandcamp';
+const pageTitle = 'Amp for Bandcamp: Privacy Policy';
+
+const breadcrumbs: Breadcrumb[] = [
+  {
+    title: 'Projects',
+    href: '/projects',
+  },
+  {
+    title: 'Amp for Bandcamp',
+    href: '/projects/amp-for-bandcamp',
+  }
+];
 
 export const metadata: Metadata = {
-  title: `${pageTitle} — enden.com`,
-  description: `${pageTitle} — enden.com`,
+  title: pageTitle,
 };
 
 export default function AmpForBandcampPrivacyPolicy() {
   return (
-    <main className="narrow-page">
-      <div className="narrow-content">
-        <h1>{pageTitle}</h1>
-
+    <NarrowPage pageTitle={pageTitle} breadcrumbs={breadcrumbs}>
         <p><strong>Last Updated:</strong> July 15, 2025</p>
 
         <h2>Information We Collect</h2>
@@ -46,9 +54,6 @@ export default function AmpForBandcampPrivacyPolicy() {
 
         <h2>Disclaimer</h2>
         <p>Amp for Bandcamp is not affiliated with Bandcamp. It is an independent browser extension created to enhance the user experience on the Bandcamp platform.</p>
-
-        <Link href="/projects/amp-for-bandcamp" className="back-link">← Back to Amp for Bandcamp</Link>
-      </div>
-    </main>
+    </NarrowPage>
   );
 }

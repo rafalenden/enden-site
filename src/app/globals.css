@@ -4,6 +4,7 @@
   --primary-color: #1802ff;
   --text-color: #333;
   --text-color-light: #666;
+  --text-color-silver: silver;
   --text-color-dark: #000;
   --border-color: rgba(0, 0, 0, 0.1);
   --kbd-border: #ddd;
@@ -33,10 +34,11 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #121522;
-    --primary-color: #456bba;
+    --primary-color: #5580d1;
     --text-color: #abb2c1;
     --text-color-light: #ccced5;
     --text-color-dark: #ffffff;
+    --text-color-silver: #273b65;
     --border-color: rgba(0, 0, 0, 0.1);
     --kbd-border: #ddd;
   }
@@ -89,7 +91,7 @@ kbd {
 }
 
 b, strong {
-  font-weight: 600;
+  font-weight: 550;
 }
 
 /* Links */
@@ -116,13 +118,6 @@ a::after {
 
 a:hover::after {
   transform: scaleX(1);
-}
-
-.back-link {
-  display: inline-block;
-  margin-bottom: var(--spacing-sm);
-  margin-top: var(--spacing-lg);
-  font-size: var(--font-size-sm);
 }
 
 .home-links, .links, .footer-links {
@@ -158,18 +153,16 @@ a:hover::after {
 
 /* Layout */
 
-.site-title-wrapper {
-  padding: var(--spacing-lg);
-  padding-bottom: 0;
+.breadcrumbs {
+  margin-bottom: var(--spacing-xl);
 }
 
-.site-title-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.site-title {
+.breadcrumb, .breadcrumb-separator {
   font-size: var(--font-size-xl);
+}
+
+.breadcrumb-separator {
+  color: var(--text-color-silver);
 }
 
 .home-page {

@@ -1,18 +1,29 @@
+import { Metadata } from "next";
 import Link from 'next/link';
 import Image from "next/image";
-import type { Metadata } from "next";
+import type { Breadcrumb } from "@/types";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const pageTitle = 'Amp for Bandcamp';
 
 export const metadata: Metadata = {
-  title: `${pageTitle} — enden.com`,
-  description: `${pageTitle} — enden.com`,
+  title: pageTitle,
+  description: 'Browser extension that amplifies Bandcamp functionality with shortcuts, playback controls and UI improvements.',
 };
+
+const breadcrumbs: Breadcrumb[] = [
+  {
+    title: 'Projects',
+    href: '/projects',
+  }
+];
 
 export default function Projects() {
   return (
     <main className="narrow-page">
       <div className="narrow-content">
+        <Breadcrumbs breadcrumbs={breadcrumbs} />
+
         <h1>{pageTitle}</h1>
 
         <div className="links">
@@ -53,8 +64,6 @@ export default function Projects() {
           streamlined, feature-rich experience.</p>
 
         <Image src="/projects/amp-for-bandcamp/screenshot-1.png" alt="Screenshot 1" width="800" height="500"/>
-
-        <Link href="/projects" className="back-link">← Back to Projects</Link>
       </div>
     </main>
   );
