@@ -1,5 +1,5 @@
-import { Breadcrumb } from "@/types";
-import Breadcrumbs from "@/components/Breadcrumbs";
+import { Breadcrumb } from '@/types';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 type NarrowPageProps = {
   pageTitle: string;
@@ -7,7 +7,11 @@ type NarrowPageProps = {
   children: React.ReactNode;
 };
 
-export default function NarrowPage({ pageTitle, breadcrumbs = [], children }: NarrowPageProps) {
+export default function NarrowPage({
+  pageTitle,
+  breadcrumbs = [],
+  children,
+}: NarrowPageProps) {
   return (
     <main className="narrow-page">
       <div className="narrow-content">

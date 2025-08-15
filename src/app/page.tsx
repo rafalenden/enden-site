@@ -5,7 +5,9 @@ export default function Home() {
   return (
     <main className="home-page">
       <header className="header">
-        <h1>enden<span className="color-blue">.</span>com</h1>
+        <h1>
+          enden<span className="color-blue">.</span>com
+        </h1>
 
         <div className="spacer">✳︎︎</div>
 
