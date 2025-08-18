@@ -1,5 +1,6 @@
 import EmailLink from '@/components/EmailLink';
 import Link from 'next/link';
+import { Logo } from '@/components/Logo';
 
 export default function Home() {
   return (
@@ -9,9 +10,10 @@ export default function Home() {
           enden<span className="color-blue">.</span>com
         </h1>
 
-        <div className="spacer">✳︎︎</div>
+        <Logo />
 
         <h2>Rafal Enden</h2>
+
         <div className="home-links">
           <Link href="/projects">Projects</Link>
           <Link href="https://link.enden.com/github?from=site">GitHub</Link>

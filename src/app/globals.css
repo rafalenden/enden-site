@@ -212,3 +212,13 @@ a:hover::after {
 .color-blue {
   color: var(--primary-color);
 }
+
+.logo {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 3px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  width: 30px;
+  height: 30px;
+}
