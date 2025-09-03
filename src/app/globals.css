@@ -127,6 +127,10 @@ a:active::after, a:focus::after {
   background-color: var(--accent-color);
 }
 
+.home-links {
+  font-size: var(--font-size-lg);
+}
+
 .home-links, .links, .footer-links {
   display: flex;
   flex-direction: row;
