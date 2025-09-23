@@ -27,6 +27,7 @@ export default function Projects() {
 
         <h1>{pageTitle}</h1>
 
+        <h2>Browser Extension</h2>
         <div className="links">
           <Link href="https://apps.apple.com/pl/app/amp-for-bandcamp/id6745343456">
             Add to Safari
