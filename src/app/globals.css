@@ -105,6 +105,7 @@ a {
   color: var(--primary-color);
   text-decoration: none;
   position: relative;
+  line-height: 1.5;
 }
 
 a::after {
