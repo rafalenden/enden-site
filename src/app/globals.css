@@ -2,13 +2,12 @@
   /* Colors */
   --background-color: #fff;
   --primary-color: #1802ff;
+  --accent-color: #e31414;
   --text-color: #333;
   --text-color-light: #666;
   --text-color-silver: silver;
   --text-color-dark: #000;
-  --border-color: rgba(0, 0, 0, 0.1);
-  --kbd-border: #ddd;
-  --accent-color: #e31414;
+  --border-color: #ddd;
 
   /* Typography */
   --line-height: 1.5;
@@ -40,8 +39,6 @@
     --text-color-light: #ccced5;
     --text-color-dark: #ffffff;
     --text-color-silver: #273b65;
-    --border-color: rgba(0, 0, 0, 0.1);
-    --kbd-border: #ddd;
     --accent-color: #d0ff6c;
   }
 }
@@ -82,7 +79,7 @@ kbd {
   display: inline-block;
   padding: 2px 6px;
   border-radius: 3px;
-  border: 1px solid var(--kbd-border);
+  border: 1px solid var(--border-color);
   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
   font-family: var(--system-ui), sans-serif;
   font-size: var(--font-size-xs);
@@ -218,7 +215,7 @@ a:active::after, a:focus::after {
 
 .narrow-content img {
   padding: var(--spacing-xs);
-  box-shadow: 0 0 1px 1px var(--primary-color);
+  box-shadow: 0 0 1px 1px var(--border-color);
 }
 
 .spacer {
