@@ -11,7 +11,7 @@ export default function Home() {
 
         <div className="spacer">✳︎︎</div>
 
-        <h2>Rafal Enden</h2>
+        <h2>Rafał Enden</h2>
         <div className="home-links">
           <Link href="/projects">Projects</Link>
           <Link href="https://link.enden.com/github?from=site">GitHub</Link>
