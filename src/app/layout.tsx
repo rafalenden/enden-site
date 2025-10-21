@@ -6,7 +6,7 @@ import './globals.css';
 export const metadata: Metadata = {
   title: {
     template: '%s – enden.com',
-    default: 'Rafal Enden – enden.com',
+    default: 'Rafał Enden – enden.com',
   },
   description: 'IT consulting and bespoke software development.',
   icons: {

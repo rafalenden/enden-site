@@ -29,7 +29,7 @@ export default function Projects() {
 
         <h2>Browser Extension</h2>
         <div className="links">
-          <Link href="https://apps.apple.com/pl/app/amp-for-bandcamp/id6745343456">
+          <Link href="https://apps.apple.com/app/amp-for-bandcamp/id6745343456">
             Add to Safari
           </Link>
           <Link href="https://chromewebstore.google.com/detail/amp-for-bandcamp/gjmlgkbcolbleloakpcfhfaodldlheld">
@@ -38,7 +38,7 @@ export default function Projects() {
           <Link href="https://addons.mozilla.org/en-US/firefox/addon/amp-for-bandcamp/">
             Add to Firefox
           </Link>
-          <Link href="https://github.com/rafenden/amp-for-bandcamp">
+          <Link href="https://github.com/rafalenden/amp-for-bandcamp">
             Source Code
           </Link>
           <Link href="/projects/amp-for-bandcamp/privacy-policy">
