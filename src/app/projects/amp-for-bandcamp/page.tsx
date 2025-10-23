@@ -27,7 +27,6 @@ export default function Projects() {
 
         <h1>{pageTitle}</h1>
 
-        <h2>Browser Extension</h2>
         <div className="links">
           <Link href="https://apps.apple.com/app/amp-for-bandcamp/id6745343456">
             Add to Safari
@@ -73,10 +72,13 @@ export default function Projects() {
           <kbd>↓</kbd> Next Track
         </div>
         <div>
-          <kbd>→</kbd> Fast Forward
+          <kbd>→</kbd> Skip Forward
         </div>
         <div>
-          <kbd>←</kbd> Rewind
+          <kbd>←</kbd> Skip Backward
+        </div>
+        <div>
+          <kbd>w</kbd> Wishlist Track
         </div>
 
         <p>
