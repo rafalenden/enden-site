@@ -110,6 +110,12 @@ export default function Projects() {
           experience.
         </p>
 
+        <p>
+          Many thanks to{' '}
+          <a href="https://instagram.com/silarskimusic/">Grzegorz Silarski</a>{' '}
+          for ideas and testing.
+        </p>
+
         <Image
           src="/projects/amp-for-bandcamp/screenshot-1.png"
           alt="Screenshot 1"
