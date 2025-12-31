@@ -1,5 +1,5 @@
 {
-  "name": "enden-com",
+  "name": "enden-site",
   "version": "5.0.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "15.3.0",
+    "next": "^15.4.10",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
@@ -19,7 +19,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "15.3.0",
+    "eslint-config-next": "^15.4.10",
     "prettier": "^3.6.2",
     "typescript": "^5"
   }
