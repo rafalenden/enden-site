@@ -1,0 +1,23 @@
+---
+import type { Breadcrumb } from '@/types';
+
+interface Props {
+  breadcrumbs: Breadcrumb[];
+}
+
+const { breadcrumbs } = Astro.props;
+---
+
+<nav class="breadcrumbs">
+  <a class="breadcrumb" href="/" aria-label="Back to home"> ← enden.com </a>
+  {
+    breadcrumbs.map((crumb) => (
+      <span>
+        <span class="breadcrumb-separator"> / </span>
+        <a class="breadcrumb" href={crumb.href}>
+          {crumb.title}
+        </a>
+      </span>
+    ))
+  }
+</nav>

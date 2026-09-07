@@ -1,0 +1,46 @@
+---
+import '@/styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Rafał Enden – enden.com',
+  description = 'IT consulting and bespoke software development.',
+} = Astro.props;
+
+const formattedTitle =
+  title === 'Rafał Enden – enden.com' ? title : `${title} – enden.com`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <title>{formattedTitle}</title>
+  </head>
+  <body>
+    <slot />
+
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-of-service">Terms of Service</a>
+      </div>
+      <div class="footer-info">
+        <p>
+          EndCode Ltd — 3rd Floor, 86-90 Paul Street, London, England, EC2A 4NE
+          <br />
+          VAT Number: GB248764465
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

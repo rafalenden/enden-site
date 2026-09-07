@@ -11,7 +11,9 @@
 
   /* Typography */
   --line-height: 1.5;
-  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --system-ui:
+    system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-family: var(--system-ui);
 
   /* Font sizes */
@@ -80,7 +82,7 @@ kbd {
   padding: 2px 6px;
   border-radius: 3px;
   border: 1px solid var(--border-color);
-  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   font-family: var(--system-ui), sans-serif;
   font-size: var(--font-size-xs);
   min-width: 40px;
@@ -90,7 +92,8 @@ kbd {
   vertical-align: text-bottom;
 }
 
-b, strong {
+b,
+strong {
   font-weight: 550;
 }
 
@@ -121,7 +124,8 @@ a:hover::after {
   transform: scaleX(1);
 }
 
-a:active::after, a:focus::after {
+a:active::after,
+a:focus::after {
   background-color: var(--accent-color);
 }
 
@@ -129,7 +133,9 @@ a:active::after, a:focus::after {
   font-size: var(--font-size-lg);
 }
 
-.home-links, .links, .footer-links {
+.home-links,
+.links,
+.footer-links {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -137,7 +143,8 @@ a:active::after, a:focus::after {
   margin-bottom: var(--spacing-lg);
 }
 
-.home-links, .footer-links {
+.home-links,
+.footer-links {
   margin-top: var(--spacing-xl);
   justify-content: center;
 }
@@ -150,7 +157,8 @@ a:active::after, a:focus::after {
   .links {
     align-items: flex-start;
   }
-  .home-links, .links {
+  .home-links,
+  .links {
     flex-direction: column;
   }
 }
@@ -166,7 +174,8 @@ a:active::after, a:focus::after {
   margin-bottom: var(--spacing-xl);
 }
 
-.breadcrumb, .breadcrumb-separator {
+.breadcrumb,
+.breadcrumb-separator {
   font-size: var(--font-size-xl);
 }
 

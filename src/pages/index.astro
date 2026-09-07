@@ -1,0 +1,24 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import EmailLink from '@/components/EmailLink.astro';
+---
+
+<BaseLayout>
+  <main class="home-page">
+    <header class="header">
+      <h1>
+        enden<span class="color-blue">.</span>com
+      </h1>
+
+      <div class="spacer">✳︎︎</div>
+
+      <h2>Rafał Enden</h2>
+      <div class="home-links">
+        <a href="/projects">Projects</a>
+        <a href="https://link.enden.com/github?from=site">GitHub</a>
+        <a href="https://link.enden.com/linkedin?from=site">LinkedIn</a>
+        <EmailLink user="site-contact">Contact</EmailLink>
+      </div>
+    </header>
+  </main>
+</BaseLayout>

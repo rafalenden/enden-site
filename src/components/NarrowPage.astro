@@ -1,0 +1,19 @@
+---
+import type { Breadcrumb } from '@/types';
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
+
+interface Props {
+  pageTitle: string;
+  breadcrumbs?: Breadcrumb[];
+}
+
+const { pageTitle, breadcrumbs = [] } = Astro.props;
+---
+
+<main class="narrow-page">
+  <div class="narrow-content">
+    <Breadcrumbs breadcrumbs={breadcrumbs} />
+    <h1>{pageTitle}</h1>
+    <slot />
+  </div>
+</main>

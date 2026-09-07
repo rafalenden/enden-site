@@ -1,0 +1,29 @@
+---
+interface Props {
+  user: string;
+}
+
+const { user } = Astro.props;
+---
+
+<a
+  href="#"
+  class="email-link"
+  data-user={user}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <slot />
+</a>
+
+<script>
+  document.querySelectorAll('.email-link').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const user = (e.currentTarget as HTMLElement).dataset.user;
+      if (user) {
+        document.location.href = `mailto:${user}@enden.com`;
+      }
+    });
+  });
+</script>
