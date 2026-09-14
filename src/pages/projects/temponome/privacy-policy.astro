@@ -1,0 +1,106 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import NarrowPage from '@/components/NarrowPage.astro';
+import type { Breadcrumb } from '@/types';
+
+const pageTitle = 'Temponome: Privacy Policy';
+
+const breadcrumbs: Breadcrumb[] = [
+  {
+    title: 'Projects',
+    href: '/projects',
+  },
+  {
+    title: 'Temponome',
+    href: '/projects/temponome',
+  },
+];
+---
+
+<BaseLayout title={pageTitle}>
+  <NarrowPage pageTitle={pageTitle} breadcrumbs={breadcrumbs}>
+    <p>
+      <strong>Last Updated:</strong> September 14, 2026
+    </p>
+
+    <h2>Information We Collect</h2>
+    <p>
+      Temponome does not send personal information, audio, or usage data to us.
+      No account is required. Tempo detection runs locally on your Mac.
+    </p>
+
+    <h2>Audio Processing</h2>
+    <p>
+      When you start detection, Temponome captures system audio to estimate its
+      tempo in beats per minute (BPM). This may include sound from other
+      applications playing at the same time. Audio samples are processed in
+      memory and are not saved as audio files or uploaded.
+    </p>
+    <p>
+      Capture stops when a result is found, you stop detection, or you quit the
+      app. If there is silence, detection can remain active while waiting for
+      audio.
+    </p>
+
+    <h2>Data Storage</h2>
+    <p>
+      Your auto-hide preference is saved locally using macOS preferences and
+      remains available between app launches.
+    </p>
+    <p>
+      Temponome also writes diagnostic messages to the macOS logging system.
+      These can include detection events, BPM estimates, confidence values, and
+      audio capture errors. They do not contain audio recordings. The app does
+      not upload these logs; their storage and retention are managed by macOS.
+    </p>
+
+    <h2>Permissions</h2>
+    <p>
+      <strong>Audio Capture:</strong> Temponome requires permission to capture system
+      audio for tempo detection. It does not use your microphone or capture screen
+      images.
+    </p>
+    <p>
+      You can manage or revoke this permission in macOS System Settings under
+      Privacy & Security. Without it, Temponome cannot detect the tempo of
+      system audio.
+    </p>
+
+    <h2>Third-Party Services</h2>
+    <p>
+      Temponome contains no analytics, advertising, or tracking services and
+      makes no network requests. Its audio analysis library, aubio, runs locally
+      as part of the app.
+    </p>
+    <p>
+      This policy covers Temponome itself. External websites and platform
+      services have their own privacy policies.
+    </p>
+
+    <h2>Data Security</h2>
+    <p>
+      Audio processing and preference storage take place on your device. Local
+      preferences and diagnostic logs are subject to macOS access controls and
+      your device's security settings. We do not receive or maintain a
+      server-side copy of this information.
+    </p>
+
+    <h2>Children's Privacy</h2>
+    <p>
+      Temponome does not transmit personal information to us from users of any
+      age, including children under 13.
+    </p>
+
+    <h2>Changes to This Policy</h2>
+    <p>
+      If the app's data handling changes, we will revise this page and update
+      the date above.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      For questions about this policy, contact EndCode Ltd through{' '}
+      <a href="https://enden.com/">enden.com</a>.
+    </p>
+  </NarrowPage>
+</BaseLayout>

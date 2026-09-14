@@ -1,0 +1,99 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import NarrowPage from '@/components/NarrowPage.astro';
+import type { Breadcrumb } from '@/types';
+
+const pageTitle = 'Temponome';
+const description =
+  'A lightweight macOS menu bar app that detects the tempo of system audio in beats per minute (BPM).';
+
+const breadcrumbs: Breadcrumb[] = [
+  {
+    title: 'Projects',
+    href: '/projects',
+  },
+];
+---
+
+<BaseLayout title={pageTitle} description={description}>
+  <NarrowPage pageTitle={pageTitle} breadcrumbs={breadcrumbs}>
+    <div class="links">
+      <a href="https://github.com/rafalenden/temponome">Source Code</a>
+      <a href="/projects/temponome/privacy-policy">Privacy Policy</a>
+    </div>
+
+    <img
+      src="/projects/temponome/screenshot-1.png"
+      alt="Temponome in the Mac menu bar: click to start, detect the tempo, and see the result of 142 BPM."
+      width="2560"
+      height="1600"
+      loading="lazy"
+    />
+
+    <p>
+      Find the tempo of the music playing on your Mac with Temponome, a
+      lightweight menu bar app that detects beats per minute (BPM). Click, keep
+      listening, and see the tempo appear right in your menu bar.
+    </p>
+
+    <h2>Key Features</h2>
+
+    <ul>
+      <li>
+        <strong>One-Click BPM Detection</strong> — Click the menu bar icon to analyze
+        the audio playing on your Mac. Results typically appear in around 5–8 seconds,
+        depending on the music.
+      </li>
+      <li>
+        <strong>Tempo at a Glance</strong> — An animated indicator shows when detection
+        is running, then gives way to the detected BPM. Click the result to measure
+        again.
+      </li>
+      <li>
+        <strong>Works with System Audio</strong> — Analyze the music you are already
+        listening to, without importing audio files or using a microphone.
+      </li>
+      <li>
+        <strong>Adjustable Auto-Hide</strong> — Keep the result visible, or hide it
+        automatically after 10, 30, or 60 seconds. Right-click the icon to choose
+        your preference.
+      </li>
+      <li>
+        <strong>Listens When You Ask</strong> — Audio analysis starts with a click
+        and stops when a result is found. Click during detection to stop it yourself.
+      </li>
+      <li>
+        <strong>Waits for the Music</strong> — During silence, Temponome keeps listening
+        until there is audio to analyze.
+      </li>
+    </ul>
+
+    <h2>How to Use</h2>
+
+    <ol>
+      <li>Open Temponome and play some music on your Mac.</li>
+      <li>Click the waveform icon in the menu bar.</li>
+      <li>Grant Audio Capture permission when prompted on first use.</li>
+      <li>
+        Wait for the detected BPM to appear. Click again whenever you want a
+        fresh reading.
+      </li>
+    </ol>
+
+    <p>
+      <strong>Privacy & Permissions:</strong> Temponome processes audio locally on
+      your Mac. Audio is not saved to a file or uploaded, and your auto-hide preference
+      is stored on your device. Audio Capture permission is needed to analyze system
+      sound.
+    </p>
+
+    <p>
+      <strong>Requirements:</strong> macOS 14.4 or later on a Mac with Apple silicon.
+    </p>
+
+    <p>
+      Useful for DJs exploring tracks, musicians checking a tempo, and anyone
+      curious about the rhythm of what they are listening to.
+    </p>
+  </NarrowPage>
+</BaseLayout>
