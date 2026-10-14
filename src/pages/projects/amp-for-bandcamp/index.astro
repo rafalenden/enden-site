@@ -5,7 +5,7 @@ import Breadcrumbs from '@/components/Breadcrumbs.astro';
 
 const pageTitle = 'Amp for Bandcamp';
 const description =
-  'Browser extension that amplifies Bandcamp functionality with shortcuts, playback controls and UI improvements.';
+  'Enhance Bandcamp with volume control, auto-play, BPM detection, keyboard shortcuts and playback progress. Available for Safari, Chrome and Firefox.';
 
 const breadcrumbs: Breadcrumb[] = [
   {
@@ -42,28 +42,54 @@ const breadcrumbs: Breadcrumb[] = [
         <a href="/projects/amp-for-bandcamp/privacy-policy"> Privacy Policy </a>
       </div>
 
-      <img
-        src="/projects/amp-for-bandcamp/screenshot-1.png"
-        alt="Screenshot 1"
-        width="800"
-        height="500"
-      />
+      <a
+        class="screenshot-link"
+        href="/projects/amp-for-bandcamp/screenshot-1-dark.png"
+        onclick="this.href = this.querySelector('img').currentSrc"
+        target="_blank"
+        rel="noopener"
+      >
+        <picture>
+          <source
+            srcset="/projects/amp-for-bandcamp/screenshot-1-dark.png"
+            media="(prefers-color-scheme: dark)"
+          />
+          <img
+            class="screenshot"
+            src="/projects/amp-for-bandcamp/screenshot-1-light.png"
+            alt="Amp for Bandcamp showing live BPM detection, automatic track playback, a feed progress bar, volume and seek settings, and keyboard shortcuts."
+            width="2880"
+            height="1800"
+          />
+        </picture>
+      </a>
 
       <p>
-        Transform your Bandcamp listening experience with Amp for Bandcamp, a
-        browser extension that adds powerful playback controls and UI
-        improvements to make music discovery and listening more enjoyable.
+        Amp for Bandcamp adds volume control, automatic track playback, BPM
+        detection and keyboard shortcuts to Bandcamp. Available for Safari,
+        Chrome and Firefox.
       </p>
 
       <h2>Key Features</h2>
 
       <p>
-        <strong>Auto-Play Next Track</strong> - Never miss a beat with automatic track
-        progression when songs end
+        <strong>BPM Detection</strong> — See the tempo of the playing track on album
+        pages, measured in beats per minute.
       </p>
 
       <p>
-        <strong>Keyboard Shortcuts</strong> - Control playback without clicking:
+        <strong>Volume Control & Seeking</strong> — Use the extension popup to set
+        the playback volume and the number of seconds to skip with seek shortcuts.
+      </p>
+
+      <p>
+        <strong>Auto-Play Next Track</strong> — Keep listening as Amp advances to
+        the next track when the current one finishes.
+      </p>
+
+      <p>
+        <strong>Keyboard Shortcuts</strong> — Control playback and manage tracks from
+        your keyboard:
       </p>
       <div>
         <kbd>space</kbd> Play/Pause
@@ -75,23 +101,26 @@ const breadcrumbs: Breadcrumb[] = [
         <kbd>↓</kbd> Next Track
       </div>
       <div>
-        <kbd>→</kbd> Skip Forward
+        <kbd>→</kbd> Seek Forward
       </div>
       <div>
-        <kbd>←</kbd> Skip Backward
+        <kbd>←</kbd> Seek Backward
       </div>
       <div>
-        <kbd>w</kbd> Wishlist Track
+        <kbd>w</kbd> Add Track to Wishlist
+      </div>
+      <div>
+        <kbd>enter</kbd> Open Track in a New Tab
       </div>
 
       <p>
-        <strong>Sticky Player</strong> - Keep the player visible as you scroll through
-        album pages for easy control access
+        <strong>Sticky Album Player</strong> — Pin the player to the top of album
+        pages so playback controls stay visible while you scroll.
       </p>
 
       <p>
-        <strong>Progress Indicators</strong> - Visual progress bars on feed and discover
-        pages show current playback status
+        <strong>Leave-Page Warning</strong> — Enable an optional warning before leaving
+        Bandcamp while music is playing.
       </p>
 
       <p>
@@ -104,12 +133,6 @@ const breadcrumbs: Breadcrumb[] = [
         <strong>Important Note:</strong> This extension is not affiliated with Bandcamp.
         It's an independent project designed to enhance your Bandcamp experience while
         respecting the original platform.
-      </p>
-
-      <p>
-        Perfect for music enthusiasts who spend time discovering and listening
-        to music on Bandcamp and want a more streamlined, feature-rich
-        experience.
       </p>
 
       <p>

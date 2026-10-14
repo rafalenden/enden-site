@@ -26,6 +26,7 @@
   --font-size-3xl: 2.5rem;
 
   /* Spacing */
+  --spacing-xxs: 0.1rem;
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 1.5rem;
@@ -209,7 +210,7 @@ a:focus::after {
 }
 
 .narrow-content {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -223,7 +224,7 @@ a:focus::after {
 }
 
 .narrow-content img {
-  padding: var(--spacing-xs);
+  padding: var(--spacing-xxs);
   box-shadow: 0 0 1px 1px var(--border-color);
 }
 
@@ -234,4 +235,14 @@ a:focus::after {
 
 .color-blue {
   color: var(--primary-color);
+}
+
+/* Screenshots open at full size so their text stays legible */
+.narrow-content .screenshot-link {
+  display: block;
+  cursor: zoom-in;
+}
+
+.narrow-content .screenshot-link::after {
+  display: none;
 }

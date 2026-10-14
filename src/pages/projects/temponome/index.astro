@@ -22,13 +22,28 @@ const breadcrumbs: Breadcrumb[] = [
       <a href="/projects/temponome/privacy-policy">Privacy Policy</a>
     </div>
 
-    <img
-      src="/projects/temponome/screenshot-1.png"
-      alt="Temponome in the Mac menu bar: click to start, detect the tempo, and see the result of 142 BPM."
-      width="2560"
-      height="1600"
-      loading="lazy"
-    />
+    <a
+      class="screenshot-link"
+      href="/projects/temponome/screenshot-1-dark.png"
+      onclick="this.href = this.querySelector('img').currentSrc"
+      target="_blank"
+      rel="noopener"
+    >
+      <picture>
+        <source
+          srcset="/projects/temponome/screenshot-1-dark.png"
+          media="(prefers-color-scheme: dark)"
+        />
+        <img
+          class="screenshot"
+          src="/projects/temponome/screenshot-1-light.png"
+          alt="Temponome overview: click the waveform in the menu bar, detect the tempo, see 142 BPM colored by confidence, plus auto-hide options and privacy highlights."
+          width="2880"
+          height="1800"
+          loading="lazy"
+        />
+      </picture>
+    </a>
 
     <p>
       Find the tempo of the music playing on your Mac with Temponome, a
